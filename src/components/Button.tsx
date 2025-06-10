@@ -2,7 +2,6 @@ type Props = {
   value: string
   onClick: (val: string) => void
 }
-
 export default function Button({ value, onClick }: Props) {
   const typeClass =
     value === '=' ? 'equal'
@@ -10,7 +9,6 @@ export default function Button({ value, onClick }: Props) {
       : ['+', '-', '*', '/'].includes(value) ? 'operator'
       : ['%', '+/-'].includes(value) ? 'extra'
       : 'default'
-
   return (
     <button
       className={`standalone-button ${typeClass}`}

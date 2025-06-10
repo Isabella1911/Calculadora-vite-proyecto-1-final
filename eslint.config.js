@@ -9,14 +9,14 @@ import plugin from '@typescript-eslint/eslint-plugin'
 export default [
   { ignores: ['dist', 'storybook-static'] },
 
-  // JS + JSX config
+  // JS 
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: {
         ...globals.browser,
-        ...globals.node // ✅ para usar `process`
+        ...globals.node 
       },
       parserOptions: {
         ecmaVersion: 'latest',
@@ -37,7 +37,7 @@ export default [
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }]
     }
   },
-// Excluir archivos de configuración fuera de src/
+
 {
   files: ['.storybook/**/*.{ts,tsx}', 'vite.config.ts'],
   languageOptions: {
@@ -47,10 +47,10 @@ export default [
       sourceType: 'module'
     }
   },
-  rules: {} // sin reglas estrictas
+  rules: {} 
 },
 
-  // TS + TSX config (solo en src/)
+  // TS 
   {
     files: ['src/**/*.{ts,tsx}'],
     languageOptions: {
@@ -72,7 +72,7 @@ export default [
     }
   },
 
-  // Storybook rules
+  // Storybook 
   {
     files: ['**/*.stories.{js,jsx,ts,tsx}'],
     plugins: { storybook },

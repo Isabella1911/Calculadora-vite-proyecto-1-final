@@ -38,20 +38,20 @@
   transition: transform 0.2s;
 }
 
-/* Botones base: números */
+/* Botones numeros */
 .buttons button:not(.operator):not(.equal):not(.clear):not(.extra) {
   background-color: #cde3b0;
   color: #000;
 }
 
-/* Operadores: + - * / */
+
 .operator {
   background-color: #f7941d;
   color: white;
   font-weight: bold;
 }
 
-/* Botón igual = */
+
 .equal {
   grid-column: span 2;
   background-color: #f7941d;
@@ -59,7 +59,7 @@
   border-radius: 12px;
 }
 
-/* Botón de limpiar */
+
 .clear {
   background-color: #e1ddb6;
   color: #000;
@@ -75,7 +75,7 @@
   transform: scale(1.05);
 }
 
-/* Botones individuales fuera del layout de la calculadora */
+
 .standalone-button {
   width: 60px;
   height: 60px;

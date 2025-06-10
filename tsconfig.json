@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    // Entorno y soporte moderno
+    
     "lib": ["DOM", "ESNext"],
     "target": "ESNext",
     "module": "ESNext",
@@ -8,25 +8,25 @@
     "jsx": "react-jsx",
     "allowJs": true,
 
-    // Modo para bundlers como Vite y Bun
+    
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "noEmit": true,
 
-    // Buenas prácticas
+  
     "strict": true,
     "skipLibCheck": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
 
-    // Puedes ajustar estas según tu estilo
+    
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": false,
 
-    // Organización del proyecto
+    
     "baseUrl": "./src",
     "resolveJsonModule": true,
     "isolatedModules": true
